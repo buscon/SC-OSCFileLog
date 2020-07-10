@@ -44,7 +44,7 @@ OSCFileLog {
 
 		thisProcess.removeOSCRecvFunc( oscRecFunc );
 
-		oscPath.debug(4, this);
+		("oscPath" + oscPath).debug(4, this);
 
 		oscRecFunc = { |msg, time, replyAddr, recvPort|
 			("oscRecFunc msg: " ++ msg).debug(6, this); // this generates a lot of output, that's why I set a really high ~debugLevel
